@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <form action="javascript:enviarDatos()" method="post" id="form_insertar" style="margin: 0px 30% 0px 30%; border:2px solid black;display: grid; grid-template-rows: 2; gap: 8px; justify-content: center;">
+        <div><label>Introduzca número alumnos:</label>
+        <select name="cantalumno">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+        </select></div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar" onclick="javascript:limpiar()">
+        </div>  
+    </form>
+    <br>
+    <div id="resultado"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloslab4.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>CITAS MÉDICAS</h1>
+    <div id="menu" >
+        <button onclick="cargarContenido('listar_medicos.php')">Médicos</button>
+        <button onclick="cargarContenido('listar_pacientes.php')">Pacientes</button>
+    </div>
+    <div id="contenido">
+    </div>
+
+    <div id="modalMensaje" class="modal" style="display:none;">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+
+            <div id="modalTexto">
+            </div>
+
+            <button id="confirmarBtn" style="width: 30px; background-color: #4ba557 ; border: none; color: white;;" >Sí</button>
+            <button onclick="cerrarModal()" style="width: 30px; background-color: #e74c3c;border: none; color: white;">No</button>
+        </div>
+    </div>
+    <div id="modalMensajeConfirmacion" class="modal" style="display:none;">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <div id="modalConfirmacion">
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
