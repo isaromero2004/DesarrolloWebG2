@@ -20,12 +20,12 @@ if (isset($_GET['id'])) {
         $pdf->AddPage();
         $pdf->SetFont('Arial', 'B', 16);
 
-        $pdf->Cell(0, 10, 'Cita Médica', 0, 1, 'C');
+        $pdf->Cell(0, 10, 'Cita Medica', 0, 1, 'C');
         $pdf->Ln(10);
         $pdf->SetFont('Arial', '', 12);
         $pdf->Cell(0, 10, 'ID Cita: ' . $fila['id'], 0, 1);
         $pdf->Cell(0, 10, 'Paciente: ' . $fila['paciente'], 0, 1);
-        $pdf->Cell(0, 10, 'Médico: ' . $fila['medico'], 0, 1);
+        $pdf->Cell(0, 10, 'Medico: ' . $fila['medico'], 0, 1);
         $pdf->Cell(0, 10, 'Fecha: ' . $fila['fecha'], 0, 1);
         $pdf->Cell(0, 10, 'Hora: ' . $fila['hora'], 0, 1);
 
